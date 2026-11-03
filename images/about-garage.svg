@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 480" width="560" height="480" role="img" aria-label="Бокс автосервиса с подъёмником и инструментами">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f242c"/>
+      <stop offset="1" stop-color="#0f1114"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="62%" r="55%">
+      <stop offset="0" stop-color="#ff6a13" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#ff6a13" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="car" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f5763"/>
+      <stop offset="1" stop-color="#262b33"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .gear { transform-box: fill-box; transform-origin: center; animation: spin 18s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .gear { animation: none; } }
+  </style>
+
+  <rect width="560" height="480" rx="28" fill="url(#bg)"/>
+  <rect width="560" height="480" rx="28" fill="url(#glow)"/>
+
+  <g fill="#ffffff" fill-opacity=".07">
+    <circle cx="40" cy="40" r="2.5"/><circle cx="80" cy="40" r="2.5"/><circle cx="120" cy="40" r="2.5"/><circle cx="160" cy="40" r="2.5"/>
+    <circle cx="200" cy="40" r="2.5"/><circle cx="240" cy="40" r="2.5"/><circle cx="280" cy="40" r="2.5"/><circle cx="320" cy="40" r="2.5"/>
+    <circle cx="360" cy="40" r="2.5"/><circle cx="400" cy="40" r="2.5"/><circle cx="440" cy="40" r="2.5"/><circle cx="480" cy="40" r="2.5"/>
+    <circle cx="520" cy="40" r="2.5"/>
+    <circle cx="40" cy="80" r="2.5"/><circle cx="80" cy="80" r="2.5"/><circle cx="120" cy="80" r="2.5"/><circle cx="160" cy="80" r="2.5"/>
+    <circle cx="200" cy="80" r="2.5"/><circle cx="240" cy="80" r="2.5"/><circle cx="280" cy="80" r="2.5"/><circle cx="320" cy="80" r="2.5"/>
+    <circle cx="360" cy="80" r="2.5"/><circle cx="400" cy="80" r="2.5"/><circle cx="440" cy="80" r="2.5"/><circle cx="480" cy="80" r="2.5"/>
+    <circle cx="520" cy="80" r="2.5"/>
+    <circle cx="40" cy="120" r="2.5"/><circle cx="80" cy="120" r="2.5"/><circle cx="120" cy="120" r="2.5"/><circle cx="160" cy="120" r="2.5"/>
+    <circle cx="200" cy="120" r="2.5"/><circle cx="240" cy="120" r="2.5"/><circle cx="280" cy="120" r="2.5"/><circle cx="320" cy="120" r="2.5"/>
+    <circle cx="360" cy="120" r="2.5"/><circle cx="400" cy="120" r="2.5"/><circle cx="440" cy="120" r="2.5"/><circle cx="480" cy="120" r="2.5"/>
+    <circle cx="520" cy="120" r="2.5"/>
+  </g>
+
+  <g fill="none" stroke="#ff6a13" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(46 42) scale(1.5)">
+      <path d="M31 10a9 9 0 0 0-8.6 11.7L10.5 33.6a3.5 3.5 0 0 0 4.9 4.9l11.9-11.9A9 9 0 0 0 39 18.5l-5.2 5.2-4.6-1-1-4.6 5.2-5.2A9 9 0 0 0 31 10z"/>
+    </g>
+    <g transform="translate(300 78)">
+      <g class="gear">
+        <circle r="26" stroke-width="10" stroke-dasharray="9 7.1"/>
+        <circle r="18"/>
+        <circle r="7"/>
+      </g>
+    </g>
+    <path d="M408 56l30 0M408 76l30 0M408 96l30 0" opacity=".7"/>
+    <path d="M470 54l22 14v28l-22 14-22-14V68z" opacity=".9"/>
+    <circle cx="470" cy="82" r="7"/>
+  </g>
+
+  <ellipse cx="280" cy="418" rx="230" ry="12" fill="#000" opacity=".45"/>
+  <path d="M0 410H560V452a28 28 0 0 1-28 28H28A28 28 0 0 1 0 452Z" fill="#14171c"/>
+  <path d="M24 448H536" stroke="#ff6a13" stroke-width="3" stroke-dasharray="26 18" opacity=".45"/>
+
+  <rect x="112" y="170" width="20" height="242" rx="4" fill="#2b3038"/>
+  <rect x="428" y="170" width="20" height="242" rx="4" fill="#2b3038"/>
+  <rect x="104" y="404" width="36" height="8" rx="3" fill="#3a414b"/>
+  <rect x="420" y="404" width="36" height="8" rx="3" fill="#3a414b"/>
+  <rect x="106" y="356" width="348" height="12" rx="5" fill="#ff6a13"/>
+
+  <g transform="translate(112 168) scale(.6)">
+    <path d="M70 318C62 318 56 312 57 304L62 268C64 252 74 244 90 241L150 228C170 205 205 178 250 164C300 150 380 148 430 160C470 170 500 195 520 222L560 232C582 238 590 250 592 270L596 304C597 312 590 318 582 318Z" fill="url(#car)"/>
+    <path d="M168 226C188 203 214 186 246 177L296 173V226Z" fill="#8fb4d9" fill-opacity=".8"/>
+    <path d="M316 172L420 171C452 178 478 198 496 226H316Z" fill="#8fb4d9" fill-opacity=".8"/>
+    <path d="M566 247L592 252L594 263L572 263Z" fill="#ff6a13"/>
+    <path d="M58 262H74V276H60Z" fill="#ff3b30"/>
+    <circle cx="165" cy="318" r="52" fill="#0b0c0e"/>
+    <circle cx="485" cy="318" r="52" fill="#0b0c0e"/>
+    <circle cx="165" cy="318" r="40" fill="#17191d"/>
+    <circle cx="485" cy="318" r="40" fill="#17191d"/>
+    <circle cx="165" cy="318" r="24" fill="#c3cad3"/>
+    <circle cx="485" cy="318" r="24" fill="#c3cad3"/>
+    <circle cx="165" cy="318" r="7" fill="#ff6a13"/>
+    <circle cx="485" cy="318" r="7" fill="#ff6a13"/>
+  </g>
+</svg>
